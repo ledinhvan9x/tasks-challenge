@@ -1,27 +1,27 @@
 # ** Enhance Code and Correct Changes **
 
 interface WalletBalance {
-blockchain: string;
-currency: string;
-amount: number;
+        blockchain: string;
+        currency: string;
+        amount: number;
 }
 
 interface FormattedWalletBalance extends WalletBalance {
-formatted: string;
+        formatted: string;
 }
 
 interface Props extends BoxProps {}
 
 const PRIORITIES: Record<string, number> = {
-Osmosis: 100,
-Ethereum: 50,
-Arbitrum: 30,
-Zilliqa: 20,
-Neo: 20,
+        Osmosis: 100,
+        Ethereum: 50,
+        Arbitrum: 30,
+        Zilliqa: 20,
+        Neo: 20,
 };
 
 const getPriority = (blockchain: string): number => {
-return PRIORITIES[blockchain] ?? -99;
+        return PRIORITIES[blockchain] ?? -99;
 };
 
 const WalletPage = (props: Props) => {
