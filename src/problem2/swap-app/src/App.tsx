@@ -2,13 +2,13 @@ import SwapCard from "./components/SwapCard";
 
 export default function App() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 text-white overflow-hidden bg-[#070A12]">
+    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 py-6 md:py-0 text-white overflow-hidden bg-[#070A12]">
       {/* GRID OVERLAY */}
       <div className="fixed inset-0 -z-10 opacity-[0.03] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]" />
 
       {/* HEADER */}
-      <header className="text-center mb-12 max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight leading-snug">
+      <header className="text-center mb-8 md:mb-12 max-w-2xl">
+        <h1 className="text-2xl md:text-3xl font-semibold tracking-tight leading-snug">
           Instant token swaps on{" "}
           <span className="text-cyan-400 font-bold">market rates</span>
         </h1>
@@ -30,7 +30,7 @@ export default function App() {
       </div>
 
       {/* FOOTER */}
-      <div className="mt-6 text-xs text-slate-500">
+      <div className="mt-6 text-center text-xs text-slate-500">
         Powered by on-chain liquidity • No custody • Instant execution
       </div>
     </div>
